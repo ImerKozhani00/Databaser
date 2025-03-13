@@ -1,5 +1,5 @@
 # Imer_YH24
-Detta projekt innehåller en SQL fil med en databaskod för en liten bokhandel. Repository innehåller även ett ER-diagram som visar relationer.
+Detta projekt innehåller en SQL fil med en databaskod för en liten bokhandel. Repositoryn innehåller även ett ER-diagram som visar relationer.
 * Kunder - Beställningar (1:M):
 Relation: En kund kan göra flera beställningar, men en beställning tillhör bara en kund
 Implementering: KundID som främmande nyckel i Beställnigar.
