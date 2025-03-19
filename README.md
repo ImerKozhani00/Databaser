@@ -28,8 +28,9 @@ För att hantera en större datamängd kan vi optimera prestandan genom indexeri
 Partitionera beställningar efter år och använda sharding för att sprida datan över flera servrar.  
 
 * Optimeringar  
-Vi kan förbättra databasen genom att använda caching för vanliga sökfrågor-
-Dessutom materialiserade vyer för rapportering samt effektiva index och constraints för att snabba upp SQL-frågor.  
+Caching: För att minska belastningen på databasen vid återkommande frågor.
+Materialiserade vyer: För att förbättra prestanda vid rapportering.
+Index och constraints: För att snabba upp sökningar och förhindra felaktig data. 
 
 Dessa åtgärder gör databasen både skalbar och responsiv även vid hög belastning.  
 
