@@ -12,7 +12,7 @@ Implementering: Ordernummer som främmande nyckel i Orderrader.
 Relation: En bok kan förekomma i flera orderrader, men varje orderrader refererar till en specifik bok.
 Implementering: ISBN som främmande nyckel i Orderrader.
 
-* Kunder - Logg (1:):
+* Kunder - Logg (1:M):
 Relation: En kund kan ha många loggposter, men varje loggpost tillhör endast en kund.
 Implementering: KundID som främmande nyckel i Logg
 
