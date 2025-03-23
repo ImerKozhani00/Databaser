@@ -21,17 +21,18 @@ Reflektion över databasen
 
 * Designval  
 Databasen är normaliserad (3NF) för att minimera redundans och säkerställa dataintegritet.
+Det innebär att varje kolumn endast lagrar en enda typ av information och att alla icke-nyckelattribut är beroende av hela primärnyckeln.
 Relationerna mellan tabellerna gör det möjligt att hantera kunder, beställningar och böcker effektivt.  
 
 * Skalbarhet (100 000 kunder)
 För att hantera en större datamängd kan prestandan optimeras genom indexering på sökbara fält, som till exempel e-post och datum. 
 E-post gör det snabbare att söka efter kunder, medan datum förbättrar hastigheten för att hämta beställningar per tidsperiod.
-Sharding skulle kunna användas för att sprida data över flera servrar, vilket skulle minska risken för att en specifik server blir överbelastad.
+Sharding skulle kunna användas för att sprida data över flera servrar, vilket skulle kunna minska risken för att en specifik server blir överbelastad.
 En annan metod som kan tillämpas är partitionering av tabellen "Beställningar", där kriteriet skulle kunna vara "År", vilket gör att äldre data kan hanteras separat och förbättrar prestandan.
 
 * Optimeringar  
 Caching: För att minska belastningen på databasen vid återkommande frågor.
-Materialiserade vyer: För att förbättra prestanda vid rapportering.
+Materialiserade vyer: För att spara ofta använda frågor och minska belastningen på databasen.
 Index och constraints: För att snabba upp sökningar och förhindra felaktig data. 
 
 Dessa åtgärder gör databasen både skalbar och responsiv även vid hög belastning.  
